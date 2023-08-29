@@ -4,7 +4,6 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import { SearchPage } from "./SearchPage/SearchPage";
-import { GlobalLayout } from "../components/Layouts/GlobalLayout";
 import { SettingsPage } from "./SettingsPage/SettingsPage";
 
 const router = createBrowserRouter(

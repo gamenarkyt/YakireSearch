@@ -1,12 +1,4 @@
-import {
-  ChangeEvent,
-  FC,
-  InputHTMLAttributes,
-  MouseEvent,
-  MouseEventHandler,
-  useRef,
-  useState,
-} from "react";
+import { ChangeEvent, FC, MouseEvent, useState } from "react";
 import styles from "./AddBookmarkModal.module.scss";
 
 interface IProps {

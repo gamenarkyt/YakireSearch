@@ -1,6 +1,16 @@
+import { FC } from "react";
 import styles from "./ContextMenuModal.module.scss";
 
-const Modal = ({ cb, coordinate, bookmarkName }) => {
+interface IProps {
+  cb: () => void;
+  coordinate: {
+    x: number;
+    y: number;
+  };
+  bookmarkName: string;
+}
+
+const Modal: FC<IProps> = ({ cb, coordinate, bookmarkName }) => {
   const onClickOpenInNewTabHandler = () => {
     window.open();
   };
