@@ -1,8 +1,8 @@
-import { FC } from "react";
+import { FC, MouseEvent } from "react";
 import styles from "./ContextMenuModal.module.scss";
 
 interface IProps {
-  cb: () => void;
+  cb: (e: MouseEvent<HTMLDivElement>) => void;
   coordinate: {
     x: number;
     y: number;
