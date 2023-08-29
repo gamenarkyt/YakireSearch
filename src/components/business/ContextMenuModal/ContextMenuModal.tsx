@@ -1,5 +1,6 @@
 import { FC, MouseEvent } from "react";
 import styles from "./ContextMenuModal.module.scss";
+import { IBookmark } from "../../../types/bookmark.interface";
 
 interface IProps {
   cb: (e: MouseEvent<HTMLDivElement>) => void;
@@ -18,11 +19,10 @@ const Modal: FC<IProps> = ({ cb, coordinate, bookmarkName }) => {
   const onClickDeleteBookmarkHandler = () => {
     const bookmarksList = JSON.parse(
       localStorage.getItem("bookmarksList") || "[]"
-    );
+    ) as IBookmark[];
     const nextBookmarksState = bookmarksList.filter(
       (b) => b.name !== bookmarkName
     );
-    console.log(nextBookmarksState);
 
     localStorage.setItem("bookmarksList", JSON.stringify(nextBookmarksState));
   };
