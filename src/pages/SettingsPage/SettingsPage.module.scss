@@ -1,0 +1,55 @@
+.settingspage {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  .homelink {
+    text-decoration: none;
+    color: var(--accent);
+  }
+
+  span {
+    font-size: var(--text-normal);
+    text-align: center;
+  }
+
+  .instancecontainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    a {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 5px;
+      text-decoration: none;
+
+      color: var(--accent);
+    }
+
+    .savebutton {
+      background-color: var(--background-element);
+      border: 1px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 4px;
+      outline: none;
+      color: var(--text-color);
+      font-size: var(--text-normal);
+      cursor: pointer;
+    }
+  }
+}
+
+input {
+  width: 200px;
+  height: 30px;
+
+  border: none;
+  outline: none;
+  font-size: var(--text-minimal);
+  padding: 2px 3px;
+  color: var(--text-color);
+  background-color: var(--background-element);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+}
