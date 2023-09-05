@@ -12,7 +12,7 @@ interface IBookmarksList {
 
 interface IProps {}
 
-const BookmarksList: FC<IProps> = ({}) => {
+const BookmarksList: FC<IProps> = () => {
   const [isModalOpened, setIsModalOpened] = useState(false);
   const [bookmarksList, setBookmarksList] = useState<IBookmarksList[]>(
     JSON.parse(localStorage.getItem("bookmarksList") || "[]") || []
